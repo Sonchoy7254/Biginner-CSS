@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        footer {
+            height: 18em;
+            width: 100%;
+            background-color: #2b2e4a;
+            color: #e84545;
+        }
+        .item {
+            display: flex;
+            flex-direction: row;
+        }
+        .left-item {
+            flex: 33%;
+        }
+        .center-item {
+            flex: 33%;
+        }
+        .right-item {
+            flex: 33%;
+        }
+        /* main style start  */
+        .end-content {
+            text-align: center;
+            color: #903749;
+        }
+        .left-item h1 {
+            font-family: Brush Script MT;
+            font-size: 45px;
+            margin: 30px 0 0 10px;
+        }
+        .center-item h2, .right-item h2 {
+            font-family: Courier New;
+            font-size: 25px;
+        }
+        .center-item p {
+            font-family: sans-serif;
+            font-size: 17px;
+            font-style: italic;
+            letter-spacing: .1em;;
+        }
+        .center-item ul {
+            list-style-type: none;
+            margin-left: -55px;
+            display: flex;
+        }
+        .center-item ul li {
+            overflow: hidden;
+            padding: 10px 14px;
+        }
+        .center-item ul li a {
+            color: #b4aee8;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: Arial;
+            letter-spacing: .2em;
+            font-style: italic;
+        }
+        .center-item ul li a:hover {
+            color: #93329e;
+        }
+        .submit-bottom {
+            border: none;
+            border-radius: 100px;
+            outline: none;
+            background-color: transparent;
+            font-size: 17px;
+            color: #b4aee8;
+            letter-spacing: .1em;
+            font-style: italic;
+        }
+        .submit-bottom:hover {
+            color: #e84545;
+        }
+        @media screen and (max-width: 800px) {
+            footer {
+                height: auto;
+            }
+            .end-content {
+                padding-bottom: 10px;
+            }
+            .item {
+                flex-direction: column;
+                text-align: center;
+            }
+            .center-item ul{
+                margin-left: 30%;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            .center-item ul {
+                margin-left: 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="all-content">
+            <div class="item">
+                <div class="left-item">
+                    <h1>We make creative Websites</h1>
+                </div>
+                <div class="center-item">
+                    <h2>contact</h2>
+                    <p>Email: email@gmail.com</p>
+                    <p>Phone: 123456789</p>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">News</a>
+                        </li>
+                        <li>
+                            <a href="">Block</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-item">
+                    <h2>Send Feedback</h2>
+                    <input type="text" value="email"> <br> <br>
+                    <textarea name="comments" cols="30" rows="5"></textarea> <br><br>
+                    <input  class="submit-bottom" type="submit" value="Send">
+                </div>
+            </div>
+            <p class="end-content">All the content copywright by ©Sonchoy</p>
+        </div>
+    </footer>
+</body>
+</html>
